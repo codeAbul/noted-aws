@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '8'
+  - "8"
 cache:
   yarn: true
   directories:
@@ -17,6 +17,7 @@ deploy:
   bucket: $S3_BUCKET
   skip_cleanup: true
   local-dir: dist
+  region: ap-northeast-1
   on:
     branch: master
 after_deploy:
